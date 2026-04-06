@@ -51,8 +51,6 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <a
             href={contact.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 transition-all duration-300 scale-95 active:scale-90 hidden md:inline-block"
           >
             Resume
@@ -85,8 +83,6 @@ export default function Navbar() {
           ))}
           <a
             href={contact.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="block bg-primary text-on-primary px-6 py-2 rounded-md font-medium text-center"
           >
             Resume
