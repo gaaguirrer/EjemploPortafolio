@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Juan Perez | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #73ffe3;
+      --primary-dim: #00e8c9;
+      --secondary: #1cede1;
+      --tertiary: #64d0ff;
+      --surface: #0e0e0e;
+      --surface-container: #1a1a1a;
+      --surface-container-high: #20201f;
+      --on-surface: #ffffff;
+      --on-surface-variant: #adaaaa;
+      --outline-variant: #484847;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: var(--surface);
+      color: var(--on-surface);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      vertical-align: middle;
+    }
+
+    /* Header */
+    .cv-header {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 2px solid var(--primary-dim);
+      margin-bottom: 30px;
+    }
+
+    .cv-header h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+
+    .cv-header .title {
+      font-size: 1.1rem;
+      color: var(--secondary);
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.9rem;
+      color: var(--on-surface-variant);
+    }
+
+    .contact-info a,
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--on-surface-variant);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: var(--primary);
+    }
+
+    .material-symbols-outlined {
+      font-size: 18px;
+      color: var(--primary-dim);
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--outline-variant);
+    }
+
+    /* Profile */
+    .profile-text {
+      color: var(--on-surface-variant);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Experience & Education */
+    .entry {
+      margin-bottom: 20px;
+      padding-left: 15px;
+      border-left: 3px solid var(--primary-dim);
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-bottom: 5px;
+    }
+
+    .entry-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--on-surface);
+    }
+
+    .entry-date {
+      font-size: 0.8rem;
+      color: var(--primary-dim);
+      font-weight: 500;
+      background: var(--surface-container-high);
+      padding: 2px 10px;
+      border-radius: 12px;
+    }
+
+    .entry-company {
+      font-size: 0.9rem;
+      color: var(--secondary);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .entry-description {
+      font-size: 0.9rem;
+      color: var(--on-surface-variant);
+      line-height: 1.6;
+    }
+
+    .entry-description ul {
+      margin-left: 18px;
+      margin-top: 5px;
+    }
+
+    .entry-description li {
+      margin-bottom: 4px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-category h4 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .skill-tag {
+      font-size: 0.8rem;
+      color: var(--on-surface-variant);
+      background: var(--surface-container);
+      padding: 3px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--outline-variant);
+    }
+
+    /* Languages */
+    .language-list {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .language-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .language-name {
+      font-size: 0.9rem;
+      color: var(--on-surface);
+      font-weight: 500;
+    }
+
+    .language-level {
+      font-size: 0.8rem;
+      color: var(--on-surface-variant);
+    }
+
+    /* Certifications */
+    .cert-list {
+      list-style: none;
+      margin: 0;
+    }
+
+    .cert-list li {
+      font-size: 0.9rem;
+      color: var(--on-surface-variant);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--surface-container-high);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cert-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* Print */
+    @media print {
+      body {
+        background: white;
+        color: #1a1a1a;
+        padding: 20px;
+      }
+
+      .cv-header h1 {
+        color: #006152;
+      }
+
+      .section-title {
+        color: #006152;
+      }
+
+      .entry-date {
+        background: #e0e0e0;
+      }
+
+      .skill-tag {
+        background: #f0f0f0;
+      }
+
+      a {
+        color: #1a1a1a;
+      }
+
+      .contact-info a:hover {
+        color: #006152;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 15px;
+      }
+
+      .cv-header h1 {
+        font-size: 1.8rem;
+      }
+
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .entry-header {
+        flex-direction: column;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .language-list {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="cv-header">
+    <h1>Juan Perez</h1>
+    <p class="title">Full Stack Developer</p>
+    <div class="contact-info">
+      <a href="mailto:hola@juanperez.dev">
+        <span class="material-symbols-outlined">mail</span>
+        hola@juanperez.dev
+      </a>
+      <a href="https://github.com/juanperez">
+        <span class="material-symbols-outlined">code</span>
+        github.com/juanperez
+      </a>
+      <a href="https://linkedin.com/in/juanperez">
+        <span class="material-symbols-outlined">work</span>
+        linkedin.com/in/juanperez
+      </a>
+      <span>
+        <span class="material-symbols-outlined">location_on</span>
+        Ciudad de Mexico, Mexico
+      </span>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Perfil Profesional</h2>
+    <p class="profile-text">
+      Desarrollador Full Stack con mas de 6 anos de experiencia en el diseno, desarrollo y despliegue de aplicaciones web escalables. Especializado en ecosistemas modernos como React, Node.js y arquitecturas cloud. Apasionado por la creacion de experiencias digitales de alta calidad, con enfoque en rendimiento, accesibilidad y buenas practicas de desarrollo. Experiencia liderando equipos bajo metodologias Agile y colaborando con equipos multidisciplinarios en proyectos de alto impacto.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Experiencia Laboral</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Senior Full Stack Developer</span>
+        <span class="entry-date">2022 - Presente</span>
+      </div>
+      <p class="entry-company">TechSolutions Corp. - Ciudad de Mexico</p>
+      <div class="entry-description">
+        <ul>
+          <li>Liderazgo tecnico de equipo de 5 desarrolladores en proyecto de plataforma SaaS para gestion empresarial</li>
+          <li>Diseno e implementacion de arquitecturas con React, Next.js y Node.js, logrando una reduccion del 40% en tiempos de carga</li>
+          <li>Migracion de infraestructura on-premise a AWS (ECS, Lambda, RDS), reduciendo costos operativos en un 30%</li>
+          <li>Implementacion de pipelines CI/CD con GitHub Actions y Docker para automatizar despliegues</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Full Stack Developer</span>
+        <span class="entry-date">2020 - 2022</span>
+      </div>
+      <p class="entry-company">Digital Agency MX - Remoto</p>
+      <div class="entry-description">
+        <ul>
+          <li>Desarrollo de aplicaciones web para clientes de diversos sectores incluyendo e-commerce, salud y educacion</li>
+          <li>Construccion de APIs RESTful con Express.js y PostgreSQL, soportando mas de 10,000 solicitudes por minuto</li>
+          <li>Implementacion de interfaces responsivas con React y Tailwind CSS, mejorando la tasa de conversion en un 25%</li>
+          <li>Mentoria a 3 desarrolladores junior, facilitando su crecimiento tecnico y profesional</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Frontend Developer</span>
+        <span class="entry-date">2018 - 2020</span>
+      </div>
+      <p class="entry-company">Startup Innovatech - Guadalajara, Mexico</p>
+      <div class="entry-description">
+        <ul>
+          <li>Desarrollo de interfaces de usuario interactivas con React y Redux para plataforma de analitica de datos</li>
+          <li>Optimizacion de rendimiento frontend, logrando puntuaciones de Lighthouse superiores a 95</li>
+          <li>Colaboracion directa con equipo de UX/UI para implementar disenos pixel-perfect</li>
+          <li>Participacion en sprints Agile con ceremonias Scrum y revisiones de codigo con Pull Requests</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Habilidades Tecnicas</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4><span class="material-symbols-outlined">web</span> Frontend</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4><span class="material-symbols-outlined">dns</span> Backend</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">GraphQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4><span class="material-symbols-outlined">database</span> Base de Datos</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4><span class="material-symbols-outlined">cloud</span> Cloud & DevOps</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Netlify</span>
+          <span class="skill-tag">Vercel</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Educacion</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Ingenieria en Sistemas Computacionales</span>
+        <span class="entry-date">2014 - 2018</span>
+      </div>
+      <p class="entry-company">Universidad Nacional Autonoma de Mexico (UNAM)</p>
+      <div class="entry-description">
+        <p>Graduado con honores. Tesis sobre arquitectura de microservicios y optimizacion de rendimiento en aplicaciones web distribuidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Certificaciones</h2>
+    <ul class="cert-list">
+      <li>
+        <span class="material-symbols-outlined">verified</span>
+        AWS Certified Cloud Practitioner - Amazon Web Services, 2023
+      </li>
+      <li>
+        <span class="material-symbols-outlined">verified</span>
+        Meta Front-End Developer Professional Certificate - Meta, 2022
+      </li>
+      <li>
+        <span class="material-symbols-outlined">verified</span>
+        The Complete Node.js Developer Course - Udemy, 2021
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Idiomas</h2>
+    <div class="language-list">
+      <div class="language-item">
+        <span class="material-symbols-outlined">translate</span>
+        <span class="language-name">Espanol</span>
+        <span class="language-level">- Nativo</span>
+      </div>
+      <div class="language-item">
+        <span class="material-symbols-outlined">translate</span>
+        <span class="language-name">Ingles</span>
+        <span class="language-level">- Avanzado (C1)</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
