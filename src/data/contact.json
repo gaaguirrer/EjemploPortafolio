@@ -6,6 +6,7 @@
     "buttonText": "Iniciar conversación",
     "email": "mailto:hola@juanperez.dev"
   },
+  "resumeUrl": "/files/cv-juan-perez.pdf",
   "footer": {
     "brand": "ARCHITECT.IO",
     "copyright": "2024 Digital Architect. Engineered with precision.",
