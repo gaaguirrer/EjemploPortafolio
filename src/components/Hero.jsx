@@ -1,6 +1,7 @@
 import { useFadeIn } from "../hooks/useFadeIn"
 import profile from "../data/profile.json"
 import stats from "../data/stats.json"
+import contact from "../data/contact.json"
 
 export default function Hero() {
   const { ref: heroRef, isVisible: heroVisible } = useFadeIn()
@@ -47,7 +48,7 @@ export default function Hero() {
                 <span className="material-symbols-outlined text-sm">arrow_forward</span>
               </a>
               <a
-                href="#"
+                href={contact.resumeUrl}
                 className="border border-outline-variant/30 text-primary px-8 py-4 rounded-md font-bold text-sm uppercase tracking-widest hover:bg-surface-container-low transition-all duration-300 flex items-center gap-2"
               >
                 Descargar CV
