@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist
+dist-ssr
+
+# Editor directories
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Mockups (no incluir en el repo)
+Mockups/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Windows reserved names
+nul
+con

@@ -1,0 +1,30 @@
+{
+  "name": "Juan Perez",
+  "title": "Full Stack Developer",
+  "branding": "Digital Architect",
+  "tagline": "Construyo aplicaciones web modernas con precision arquitectonica y enfoque en la experiencia de usuario.",
+  "codeBlock": {
+    "name": "Juan Perez",
+    "role": "Full Stack",
+    "mission": "Build Digital Excellence",
+    "stack": ["React", "Node", "Go"]
+  },
+  "status": "Disponible para nuevas oportunidades",
+  "about": {
+    "subtitle": "Arquitecto de Soluciones",
+    "headline": "Transformando codigo en experiencias digitales.",
+    "experience": {
+      "title": "Experiencia",
+      "text": "Mas de 6 anos disenando y desplegando arquitecturas escalables. Me especializo en ecosistemas modernos, priorizando la legibilidad, el rendimiento y la seguridad del usuario final."
+    },
+    "interests": {
+      "title": "Intereses",
+      "text": "Computacion cuantica, UI/UX disruptiva y la optimizacion de procesos mediante inteligencia artificial aplicada al desarrollo."
+    },
+    "goals": {
+      "title": "Objetivos",
+      "text": "Liderar equipos de alto rendimiento para construir la proxima generacion de herramientas SaaS centradas en la privacidad."
+    }
+  },
+  "profileImage": "/images/profile.jpg"
+}

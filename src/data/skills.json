@@ -1,0 +1,79 @@
+{
+  "techStack": {
+    "title": "Stack Tecnologico",
+    "subtitle": "Un conjunto de herramientas seleccionado para la maxima eficiencia y escalabilidad en proyectos enterprise.",
+    "categories": [
+      {
+        "icon": "web",
+        "color": "primary",
+        "title": "Frontend",
+        "items": [
+          { "name": "React / Next.js", "icon": "terminal" },
+          { "name": "Tailwind CSS", "icon": "css" },
+          { "name": "TypeScript", "icon": "code" }
+        ]
+      },
+      {
+        "icon": "dns",
+        "color": "tertiary",
+        "title": "Backend",
+        "items": [
+          { "name": "Node.js / Bun", "icon": "javascript" },
+          { "name": "Python (FastAPI)", "icon": "api" },
+          { "name": "Go Lang", "icon": "settings_ethernet" }
+        ]
+      },
+      {
+        "icon": "database",
+        "color": "secondary",
+        "title": "Infraestructura",
+        "items": [
+          { "name": "PostgreSQL / Redis", "icon": "storage" },
+          { "name": "AWS / Vercel", "icon": "cloud" },
+          { "name": "Docker / K8s", "icon": "deployed_code" }
+        ]
+      }
+    ]
+  },
+  "softSkills": {
+    "subtitle": "Habilidades Blandas",
+    "title": "Mas alla de la pantalla",
+    "items": [
+      {
+        "icon": "forum",
+        "color": "primary",
+        "title": "Comunicacion Asertiva",
+        "description": "Capacidad para traducir requerimientos tecnicos complejos en lenguaje de negocio claro para stakeholders.",
+        "size": "wide"
+      },
+      {
+        "icon": "groups",
+        "color": "secondary",
+        "title": "Trabajo en Equipo",
+        "description": "Experiencia liderando squads multidisciplinarios bajo metodologias Agile y Scrum de alto rendimiento.",
+        "size": "wide"
+      },
+      {
+        "icon": "psychology",
+        "color": "tertiary",
+        "title": "Resolucion de Conflictos",
+        "description": "Enfoque analitico para encontrar soluciones eficientes ante bloqueos tecnicos inesperados.",
+        "size": "small"
+      },
+      {
+        "icon": "school",
+        "color": "primary",
+        "title": "Mentoring",
+        "description": "Apoyo constante en el crecimiento tecnico de desarrolladores junior y mid-level.",
+        "size": "small"
+      },
+      {
+        "icon": "auto_awesome",
+        "color": "secondary",
+        "title": "Adaptabilidad",
+        "description": "Evolucion constante con el ecosistema tecnologico, aprendiendo nuevas stacks rapidamente.",
+        "size": "small"
+      }
+    ]
+  }
+}
