@@ -31,13 +31,11 @@ export default function About() {
           <span className="font-label text-primary uppercase tracking-[0.2em] text-xs font-bold mb-4 block">
             {about.subtitle}
           </span>
-          <h1 className="font-headline text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-tight">
-            {about.headline.split(" ").slice(0, 1).join(" ")}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">
-              {about.headline.split(" ").slice(1, 2).join(" ")}
-            </span>{" "}
-            {about.headline.split(" ").slice(2).join(" ")}
-          </h1>
+          <h1 className="font-headline text-5xl md:text-6xl font-bold tracking-tighter mb-8 leading-tight"
+            dangerouslySetInnerHTML={{
+              __html: about.headline.replace(/(\S+)\s+(\S+)\s+(.*)/, '$1 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">$2</span> $3')
+            }}
+          ></h1>
 
           <div className="space-y-8 text-on-surface-variant leading-relaxed">
             <div className="glass-card p-6 rounded-lg border-l-4 border-primary/40">

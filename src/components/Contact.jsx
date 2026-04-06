@@ -16,7 +16,7 @@ export default function Contact() {
       <div className="absolute inset-0 bg-primary/5 skew-y-3 origin-right"></div>
       <div className="max-w-7xl mx-auto px-8 relative z-10 text-center">
         <h2 className="text-5xl md:text-7xl font-headline font-bold tracking-tighter mb-8 leading-tight">
-          {cta.headline.split(" el").slice(0, 1).join(" el")}
+          {cta.headlinePart1}
           <br />
           <span className="text-primary">{cta.headlineHighlight}</span>
         </h2>

@@ -1,9 +1,9 @@
 {
   "cta": {
-    "headline": "Listo para construir el siguiente nivel?",
+    "headlinePart1": "¿Listo para construir el",
     "headlineHighlight": "siguiente nivel?",
-    "text": "Hablemos sobre tu proximo proyecto y como podemos convertirlo en una experiencia digital excepcional.",
-    "buttonText": "Iniciar conversacion",
+    "text": "Hablemos sobre tu próximo proyecto y cómo podemos convertirlo en una experiencia digital excepcional.",
+    "buttonText": "Iniciar conversación",
     "email": "mailto:hola@juanperez.dev"
   },
   "footer": {

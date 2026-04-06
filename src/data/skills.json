@@ -1,7 +1,7 @@
 {
   "techStack": {
-    "title": "Stack Tecnologico",
-    "subtitle": "Un conjunto de herramientas seleccionado para la maxima eficiencia y escalabilidad en proyectos enterprise.",
+    "title": "Stack Tecnológico",
+    "subtitle": "Un conjunto de herramientas seleccionado para la máxima eficiencia y escalabilidad en proyectos enterprise.",
     "categories": [
       {
         "icon": "web",
@@ -37,41 +37,41 @@
   },
   "softSkills": {
     "subtitle": "Habilidades Blandas",
-    "title": "Mas alla de la pantalla",
+    "title": "Más allá de la pantalla",
     "items": [
       {
         "icon": "forum",
         "color": "primary",
-        "title": "Comunicacion Asertiva",
-        "description": "Capacidad para traducir requerimientos tecnicos complejos en lenguaje de negocio claro para stakeholders.",
+        "title": "Comunicación Asertiva",
+        "description": "Capacidad para traducir requerimientos técnicos complejos en lenguaje de negocio claro para stakeholders.",
         "size": "wide"
       },
       {
         "icon": "groups",
         "color": "secondary",
         "title": "Trabajo en Equipo",
-        "description": "Experiencia liderando squads multidisciplinarios bajo metodologias Agile y Scrum de alto rendimiento.",
+        "description": "Experiencia liderando squads multidisciplinarios bajo metodologías Agile y Scrum de alto rendimiento.",
         "size": "wide"
       },
       {
         "icon": "psychology",
         "color": "tertiary",
-        "title": "Resolucion de Conflictos",
-        "description": "Enfoque analitico para encontrar soluciones eficientes ante bloqueos tecnicos inesperados.",
+        "title": "Resolución de Conflictos",
+        "description": "Enfoque analítico para encontrar soluciones eficientes ante bloqueos técnicos inesperados.",
         "size": "small"
       },
       {
         "icon": "school",
         "color": "primary",
         "title": "Mentoring",
-        "description": "Apoyo constante en el crecimiento tecnico de desarrolladores junior y mid-level.",
+        "description": "Apoyo constante en el crecimiento técnico de desarrolladores junior y mid-level.",
         "size": "small"
       },
       {
         "icon": "auto_awesome",
         "color": "secondary",
         "title": "Adaptabilidad",
-        "description": "Evolucion constante con el ecosistema tecnologico, aprendiendo nuevas stacks rapidamente.",
+        "description": "Evolución constante con el ecosistema tecnológico, aprendiendo nuevas stacks rápidamente.",
         "size": "small"
       }
     ]

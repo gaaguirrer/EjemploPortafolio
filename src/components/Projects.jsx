@@ -69,7 +69,7 @@ export default function Projects() {
                       className="flex items-center gap-1 text-primary text-sm font-label uppercase tracking-widest hover:text-primary-dim transition-colors"
                     >
                       <span className="material-symbols-outlined text-sm">code</span>
-                      Codigo
+                      Código
                     </a>
                     <a
                       href={project.demo}

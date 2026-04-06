@@ -37,7 +37,7 @@ npm run dev
 1. Clona el repositorio:
 
 ```bash
-git clone <url-de-tu-repo>
+git clone https://github.com/gaaguirrer/EjemploPortafolio
 cd Portafolio
 ```
 
